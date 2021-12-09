@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() 
+{
+    
+    string s;
+    int n;
+    cin >> s >> n;
+    int a = s[0];
+   // cout << a<<" ";
+    string Q = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    string q = "abcdefghijklmnopqrstuvwxyz";
+    if(a >= 65 && a <= 90)
+    {
+        int b = n;
+        b = b%26;
+      //  cout << b<<" ";
+    b = a + b;
+    //cout << b<<" ";
+   
+    cout << Q[(b-65)%26];
+    }
+    else
+    {
+          int b = n;
+        b = b%26;
+      //  cout << b<<" ";
+    b = a + b;
+    //cout << b<<" ";
+   
+    cout << q[(b-97)%26];
+    }
+}
+
+for any query contact : https://ayushshuklas.netlify.com
